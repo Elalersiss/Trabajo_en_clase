@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lector manga</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Lector Manga</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Categorías</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search" style="padding-right: 100px;">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+          <a class="nav-link" href="#">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="Imagenes/R.png" width="20px"/>
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" style="color: white;" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5"  id="exampleModalLabel">Inicio de sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-6 position-relative">
+                        <label for="validationTooltip01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombre" required>
+                        <div class="valid-tooltip">
+                          Es valido!
+                        </div>
+                        <div class="invalid-tooltip">
+                          Por favor ingrese un nombre valido.
+                        </div>
+                      </div>
+                      <div class="col-md-6 position-relative">
+                        <label for="validationTooltip02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellido" required>
+                        <div class="valid-tooltip">
+                          Es valido!
+                        </div>
+                        <div class="invalid-tooltip">
+                          Por favor ingrese un apellido valido.
+                        </div>
+                      </div>
+                      <div class="col-md-6 position-relative">
+                        <label for="validationTooltipUsername" class="form-label">Usuario</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                          <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Correo electrónico" aria-describedby="validationTooltipUsernamePrepend" required>
+                          <div class="valid-tooltip">
+                            Es valido!
+                          </div>
+                          <div class="invalid-tooltip">
+                            Por favor ingrese un correo valido.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 position-relative">
+                        <label for="validationTooltipUsername" class="form-label">Contraseña</label>
+                        <div class="input-group has-validation">
+                          <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Contraseña" aria-describedby="validationTooltipUsernamePrepend" required>
+                          <div class="valid-tooltip">
+                            Es valido!
+                          </div>
+                          <div class="invalid-tooltip">
+                            Por favor ingrese una contraseña valida.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
+                        <h1 style="font-size: 25px;">
+                          Fecha de nacimiento
+                        </h1>
+                      </div>
+
+                      <div class="col-md-4 position-relative">
+                        <label for="validationTooltip04" class="form-label">Mes</label>
+                        <select class="form-select" id="validationTooltip04" required>
+                          <option selected disabled value="">Elegir...</option>
+                          <option>...</option>
+                          <option>Enero</option>
+                          <option>Febrero</option>
+                          <option>Marzo</option>
+                          <option>Abril</option>
+                          <option>Mayo</option>
+                          <option>Junio</option>
+                          <option>Julio</option>
+                          <option>Agosto</option>
+                          <option>Septiembre</option>
+                          <option>Octubre</option>
+                          <option>Noviembre</option>
+                          <option>Diciembre</option>
+                        </select>
+                        <div class="valid-tooltip">
+                          Es valido!
+                        </div>
+                        <div class="invalid-tooltip">
+                          Por favor ingrese un mes valido.
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 position-relative">
+                        <label for="validationTooltip04" class="form-label">Día</label>
+                        <select class="form-select" id="validationTooltip04" required>
+                          <option selected disabled value="">Elegir...</option>
+                          <option>...</option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                          <option>31</option>
+                        </select>
+                        <div class="valid-tooltip">
+                          Es valido!
+                        </div>
+                        <div class="invalid-tooltip">
+                          Por favor ingrese un día valido.
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4 position-relative">
+                        <label for="validationTooltip04" class="form-label">Año</label>
+                        <select class="form-select" id="validationTooltip04" required>
+                          <option selected disabled value="">Elegir...</option>
+                          <option>...</option>
+                          <option>1950</option>
+                          <option>1951</option>
+                          <option>1952</option>
+                          <option>1953</option>
+                          <option>1954</option>
+                          <option>1955</option>
+                          <option>1956</option>
+                          <option>1957</option>
+                          <option>1958</option>
+                          <option>1959</option>
+                          <option>1960</option>
+                          <option>1961</option>
+                          <option>1962</option>
+                          <option>1963</option>
+                          <option>1964</option>
+                          <option>1965</option>
+                          <option>1966</option>
+                          <option>1967</option>
+                          <option>1968</option>
+                          <option>1969</option>
+                          <option>1970</option>
+                          <option>1971</option>
+                          <option>1972</option>
+                          <option>1973</option>
+                          <option>1974</option>
+                          <option>1975</option>
+                          <option>1976</option>
+                          <option>1977</option>
+                          <option>1978</option>
+                          <option>1979</option>
+                          <option>1980</option>
+                          <option>1981</option>
+                          <option>1982</option>
+                          <option>1983</option>
+                          <option>1984</option>
+                          <option>1985</option>
+                          <option>1986</option>
+                          <option>1987</option>
+                          <option>1988</option>
+                          <option>1989</option>
+                          <option>1990</option>
+                          <option>1991</option>
+                          <option>1992</option>
+                          <option>1993</option>
+                          <option>1994</option>
+                          <option>1995</option>
+                          <option>1996</option>
+                          <option>1997</option>
+                          <option>1998</option>
+                          <option>1999</option>
+                          <option>2000</option>
+                          <option>2001</option>
+                          <option>2002</option>
+                          <option>2003</option>
+                          <option>2004</option>
+                          <option>2005</option>
+                          <option>2006</option>
+                          <option>2007</option>
+                          <option>2008</option>
+                          <option>2009</option>
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                          <option>2013</option>
+                          <option>2014</option>
+                          <option>2015</option>
+                          <option>2016</option>
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                        </select>
+                        <div class="valid-tooltip">
+                          Es valido!
+                        </div>
+                        <div class="invalid-tooltip">
+                          Por favor ingrese un año valido.
+                        </div>
+                      </div>
+                    
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-2">
+      <div class="container-fluid" style="background-color: slategrey; padding: 10px;">
+        <h2>
+          Mangas Recientes
+        </h2>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4" style="grid-column-gap: 20px; padding-top: 10px;">
+          <div class="card mb-3" style="max-height: 400px; max-width: 540px; width: 405px;">
+            <div class="row g-0">
+              <div class="col-md-4" style="width: 175px;">
+                <img src="imagenes/Manga-Dandadan.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8" style="width: 200px;" >
+                <div class="card-body">
+                  <h5 class="card-title">Dandadan</h5>
+                  <p class="card-text" style="max-height: 160px; overflow: scroll;">Takakura es un joven amante de lo oculto que no cree en fantasmas, mientras que su amiga,
+                    Ayase, no cree en los alienígenas, pero juntos se toparán con un misterio que desafiará todas sus creencias
+                    y convenciones.</p>
+                  <p class="card-text"><small class="text-body-secondary">Último cap hace 10 mins</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-height: 400px; max-width: 540px; width: 405px;">
+            <div class="row g-0">
+              <div class="col-md-4" style="width: 183px;">
+                <img src="imagenes/chainsawmanvol1.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8" style="width: 190px;">
+                <div class="card-body">
+                  <h5 class="card-title">Chainsaw Man</h5>
+                  <p class="card-text" style="max-height: 160px; overflow: scroll;">Cuando su padre murió, Denji se vio obligado a
+                    saldar una gran deuda y no había forma de pagarla. Pero gracias a la ayuda de un Demonio Perro que salvó llamado Pochita,
+                    Denji es capaz de sobrevivir convirtiéndose en un Cazador de demonios a sueldo, haciendo trabajos para los Yakuza.
+                    Los poderes motosierra de Pochita son útiles contra estos poderosos demonios. Y cuando Denji termina siendo asesinado
+                    por un demonio, Pochita se sacrifica para revivirlo. Pero ahora Denji ha renacido como una especie de extraño híbrido
+                    Demonio-Humano. ¡Ahora es Chainsaw Man! Después de su transformación, es reclutado rápidamente y obligado a unirse a
+                    los Cazadores de Demonios de Seguridad Pública bajo amenaza de exterminio ya que técnicamente es un Demonio.
+                    Ahora que vive cómodamente por primera vez en su vida, Denji lucha por determinar sus sueños y establecer relaciones
+                    significativas mientras mata demonios y trabaja junto a otros excéntricos cazadores.</p>
+                  <p class="card-text"><small class="text-body-secondary">Último cap hace 23 horas</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-height: 400px; max-width: 540px; width: 405px;">
+            <div class="row g-0">
+              <div class="col-md-4" style="width: 187px;">
+                <img src="imagenes/OIP (1).jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8" style="width: 185px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tengoku Daimakyou</h5>
+                  <p class="card-text" style="max-height: 140px; overflow: scroll;">Los niños viven en un mundo hermoso,
+                    rodeado de paredes. Sin embargo, un día, una niña llamada Tokio recibió un mensaje preguntándole:
+                    "¿Quieres salir del exterior?" Ahora, desde el Paraíso, que comienza a desmoronarse, ¡los niños comienzan su aventura!</p>
+                  <p class="card-text"><small class="text-body-secondary">Último cap hace 1 hora</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-height: 400px; max-width: 540px; width: 405px;">
+            <div class="row g-0">
+              <div class="col-md-4" style="width: 176px;">
+                <img src="imagenes/onepiece.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8" style="width: 185px;">
+                <div class="card-body">
+                  <h5 class="card-title">One Piece</h5>
+                  <p class="card-text" style="max-height: 160px; overflow: scroll;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Último cap hace 3 horas</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  
+    
+    <!-- Script para inicio de sesion con validación -->
+    <script>
+      (() => {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+      
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
